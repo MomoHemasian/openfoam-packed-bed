@@ -1,0 +1,7 @@
+FoamFile { version 2.0; format ascii; class dictionary; object topoSetDict; }
+// Mark the cells between z = 0.1 m and z = 0.6 m as the pellet bed.
+actions
+(
+    { name bedCells; type cellSet;  action new; source boxToCell; box (-1 -1 0.1) (1 1 0.6); }
+    { name bed;      type cellZoneSet; action new; source setToCellZone; set bedCells; }
+);

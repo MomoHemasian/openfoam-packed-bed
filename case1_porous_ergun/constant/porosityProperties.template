@@ -1,0 +1,21 @@
+FoamFile { version 2.0; format ascii; class dictionary; object porosityProperties; }
+// Darcy-Forchheimer momentum sink:  S = -(mu*d + 0.5*rho*|U|*f) U
+// Matching Ergun:  d = 150 (1-eps)^2 / (eps^3 dp^2),  f = 2*1.75 (1-eps) / (eps^3 dp)
+// The values below are written by run_sweep.py from eps and dp.
+bed
+{
+    type            DarcyForchheimer;
+    active          yes;
+    cellZone        bed;
+    DarcyForchheimerCoeffs
+    {
+        d   (D_VALUE D_VALUE D_VALUE);
+        f   (F_VALUE F_VALUE F_VALUE);
+        coordinateSystem
+        {
+            origin  (0 0 0);
+            e1      (1 0 0);
+            e2      (0 1 0);
+        }
+    }
+}

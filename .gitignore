@@ -1,0 +1,9 @@
+# OpenFOAM run folders and solver output (re-created by the scripts)
+case1_porous_ergun/runs/
+case2_resolved_bed/runs/
+case1b_wall_channelling/[1-9]*/
+case1b_wall_channelling/constant/polyMesh/
+case1b_wall_channelling/log.*
+case1b_wall_channelling/VTK/
+__pycache__/
+*.pyc

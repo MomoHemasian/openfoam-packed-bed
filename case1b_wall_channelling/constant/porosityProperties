@@ -1,0 +1,32 @@
+FoamFile { version 2.0; format ascii; class dictionary; object porosityProperties; }
+// Ergun-matched Darcy-Forchheimer coefficients (see case1 for the formulas).
+hearth   // fired pellets, larger: eps = 0.4, d_p = 14 mm
+{
+    type DarcyForchheimer; active yes; cellZone hearth;
+    DarcyForchheimerCoeffs
+    {
+        d (4.304847e+06 4.304847e+06 4.304847e+06);
+        f (2.343750e+03 2.343750e+03 2.343750e+03);
+        coordinateSystem { origin (0 0 0); e1 (1 0 0); e2 (0 1 0); }
+    }
+}
+green   // green pellets: eps = 0.4, d_p = 12 mm
+{
+    type DarcyForchheimer; active yes; cellZone green;
+    DarcyForchheimerCoeffs
+    {
+        d (5.859375e+06 5.859375e+06 5.859375e+06);
+        f (2.734375e+03 2.734375e+03 2.734375e+03);
+        coordinateSystem { origin (0 0 0); e1 (1 0 0); e2 (0 1 0); }
+    }
+}
+wallStrip   // green pellets next to the side wall: eps = 0.48, d_p = 12 mm
+{
+    type DarcyForchheimer; active yes; cellZone wallStrip;
+    DarcyForchheimerCoeffs
+    {
+        d (2.546899e+06 2.546899e+06 2.546899e+06);
+        f (1.371407e+03 1.371407e+03 1.371407e+03);
+        coordinateSystem { origin (0 0 0); e1 (1 0 0); e2 (0 1 0); }
+    }
+}

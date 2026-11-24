@@ -1,0 +1,4 @@
+FoamFile { version 2.0; format ascii; class dictionary; object turbulenceProperties; }
+// Laminar on purpose: in a porous-zone model the pore-scale turbulence is
+// already inside the Ergun (Forchheimer) term. We resolve only the mean flow.
+simulationType laminar;

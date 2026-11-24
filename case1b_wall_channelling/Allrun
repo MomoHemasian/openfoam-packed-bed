@@ -1,0 +1,8 @@
+#!/bin/bash
+# Case 1b: mesh, mark the three porous zones, solve, plot.
+cd "$(dirname "$0")"
+blockMesh        > log.blockMesh 2>&1
+topoSet          > log.topoSet 2>&1
+porousSimpleFoam > log.porousSimpleFoam 2>&1
+tail -n 3 log.porousSimpleFoam
+python3 plot_case1b.py

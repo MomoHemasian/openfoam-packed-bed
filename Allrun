@@ -1,0 +1,8 @@
+#!/bin/bash
+# Run every case and make every plot. Start it from an OpenFOAM terminal
+# (Ubuntu or WSL with the "openfoam" package installed).
+set -e
+cd "$(dirname "$0")"
+echo "== Case 1: porous zone versus Ergun";            (cd case1_porous_ergun && python3 run_sweep.py && python3 plot_case1.py)
+echo "== Case 1b: wall channelling in a 2D grate bed"; bash case1b_wall_channelling/Allrun
+echo "== Case 2: resolved pellets (about 30-60 min)";  (cd case2_resolved_bed && python3 run_study.py && python3 analyse_case2.py)

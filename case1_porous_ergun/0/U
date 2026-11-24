@@ -1,0 +1,10 @@
+FoamFile { version 2.0; format ascii; class volVectorField; object U; }
+// U is the SUPERFICIAL velocity (flow rate / full column area), same as in Ergun.
+dimensions [0 1 -1 0 0 0 0];
+internalField uniform (0 0 U_IN);
+boundaryField
+{
+    inlet  { type fixedValue; value uniform (0 0 U_IN); }
+    outlet { type zeroGradient; }
+    sides  { type empty; }
+}

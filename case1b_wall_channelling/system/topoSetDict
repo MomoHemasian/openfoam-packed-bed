@@ -1,0 +1,12 @@
+FoamFile { version 2.0; format ascii; class dictionary; object topoSetDict; }
+// Three porous zones. Near a flat wall spheres cannot pack as tightly, so the
+// porosity is higher in a strip about one to two pellet diameters wide.
+actions
+(
+    { name hearthC; type cellSet; action new; source boxToCell; box (-1 -1 0.05) (0.48 1 0.15); }
+    { name greenC;  type cellSet; action new; source boxToCell; box (-1 -1 0.15) (0.48 1 0.56); }
+    { name wallC;   type cellSet; action new; source boxToCell; box (0.48 -1 0.05) (1 1 0.56); }
+    { name hearth;    type cellZoneSet; action new; source setToCellZone; set hearthC; }
+    { name green;     type cellZoneSet; action new; source setToCellZone; set greenC; }
+    { name wallStrip; type cellZoneSet; action new; source setToCellZone; set wallC; }
+);

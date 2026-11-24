@@ -1,0 +1,156 @@
+[
+ {
+  "periods": 2,
+  "Re": 1,
+  "level": 2,
+  "u": 0.0012633333333333333,
+  "p_in_kin": 0.0025688231207700004,
+  "T_out": 1.455718256950013e-12,
+  "cells": 51610,
+  "iterations": 223,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 1,
+  "level": 2,
+  "u": 0.0012633333333333333,
+  "p_in_kin": 0.00570382727716,
+  "T_out": 1.0089914725300014e-23,
+  "cells": 93450,
+  "iterations": 201,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 5,
+  "level": 2,
+  "u": 0.006316666666666667,
+  "p_in_kin": 0.0130817898265,
+  "T_out": 1.5165627527980093e-07,
+  "cells": 51610,
+  "iterations": 241,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 5,
+  "level": 2,
+  "u": 0.006316666666666667,
+  "p_in_kin": 0.029009333756799996,
+  "T_out": 9.583303313333756e-14,
+  "cells": 93450,
+  "iterations": 218,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 20,
+  "level": 2,
+  "u": 0.025266666666666666,
+  "p_in_kin": 0.058439729079200003,
+  "T_out": 0.004715340347235345,
+  "cells": 51610,
+  "iterations": 260,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 20,
+  "level": 2,
+  "u": 0.025266666666666666,
+  "p_in_kin": 0.127172083048,
+  "T_out": 5.838925564736481e-05,
+  "cells": 93450,
+  "iterations": 248,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 50,
+  "level": 2,
+  "u": 0.06316666666666666,
+  "p_in_kin": 0.18510613320299998,
+  "T_out": 0.08063313125142521,
+  "cells": 51610,
+  "iterations": 255,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 50,
+  "level": 2,
+  "u": 0.06316666666666666,
+  "p_in_kin": 0.383931205182,
+  "T_out": 0.013333326581420753,
+  "cells": 93450,
+  "iterations": 274,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 100,
+  "level": 2,
+  "u": 0.12633333333333333,
+  "p_in_kin": 0.4995133828890001,
+  "T_out": 0.20464973417227642,
+  "cells": 51610,
+  "iterations": 297,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 100,
+  "level": 2,
+  "u": 0.12633333333333333,
+  "p_in_kin": 0.9851010433910001,
+  "T_out": 0.0806497453264751,
+  "cells": 93450,
+  "iterations": 479,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 5,
+  "level": 3,
+  "u": 0.006316666666666667,
+  "p_in_kin": 0.0132496723095,
+  "T_out": 1.4548055297638398e-07,
+  "cells": 188010,
+  "iterations": 237,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 5,
+  "level": 3,
+  "u": 0.006316666666666667,
+  "p_in_kin": 0.02938364318370001,
+  "T_out": 8.87782638006436e-14,
+  "cells": 365410,
+  "iterations": 219,
+  "converged": true
+ },
+ {
+  "periods": 2,
+  "Re": 50,
+  "level": 3,
+  "u": 0.06316666666666666,
+  "p_in_kin": 0.18702275904800003,
+  "T_out": 0.08076648480993567,
+  "cells": 188010,
+  "iterations": 283,
+  "converged": true
+ },
+ {
+  "periods": 4,
+  "Re": 50,
+  "level": 3,
+  "u": 0.06316666666666666,
+  "p_in_kin": 0.38762144721799996,
+  "T_out": 0.013541298025292383,
+  "cells": 365410,
+  "iterations": 295,
+  "converged": true
+ }
+]

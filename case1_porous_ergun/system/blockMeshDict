@@ -1,0 +1,16 @@
+FoamFile { version 2.0; format ascii; class dictionary; object blockMeshDict; }
+// 1D column (flow in +z). 10 cm empty inlet, 50 cm pellet bed, 20 cm empty outlet.
+// x and y have one cell and are "empty", so OpenFOAM solves a 1D problem.
+convertToMeters 1;
+vertices
+(
+    (0 0 0) (0.01 0 0) (0.01 0.01 0) (0 0.01 0)
+    (0 0 0.8) (0.01 0 0.8) (0.01 0.01 0.8) (0 0.01 0.8)
+);
+blocks ( hex (0 1 2 3 4 5 6 7) (1 1 400) simpleGrading (1 1 1) );
+boundary
+(
+    inlet  { type patch; faces ((0 3 2 1)); }
+    outlet { type patch; faces ((4 5 6 7)); }
+    sides  { type empty; faces ((0 1 5 4) (1 2 6 5) (2 3 7 6) (3 0 4 7)); }
+);
